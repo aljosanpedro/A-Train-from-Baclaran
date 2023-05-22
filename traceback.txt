@@ -1,0 +1,33 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00build.rpy", line 573, in script
+    init 1500 python in build:
+  File "renpy/common/00build.rpy", line 573, in script
+    init 1500 python in build:
+  File "renpy/common/00build.rpy", line 585, in <module>
+    directory_name += "-" + version
+TypeError: can only concatenate str (not "int") to str
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\User\Desktop\Game Room\DevelUP\Mine\renpy-8.0.1-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\Users\User\Desktop\Game Room\DevelUP\Mine\renpy-8.0.1-sdk\renpy\main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "renpy/common/00build.rpy", line 573, in script
+    init 1500 python in build:
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "renpy/common/00build.rpy", line 573, in script
+    init 1500 python in build:
+  File "C:\Users\User\Desktop\Game Room\DevelUP\Mine\renpy-8.0.1-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\User\Desktop\Game Room\DevelUP\Mine\renpy-8.0.1-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00build.rpy", line 585, in <module>
+    directory_name += "-" + version
+TypeError: can only concatenate str (not "int") to str
+
+Windows-10-10.0.22000 AMD64
+Ren'Py 8.0.3.22090809
